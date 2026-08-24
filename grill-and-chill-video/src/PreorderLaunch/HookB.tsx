@@ -15,54 +15,58 @@ export const HookB: React.FC = () => {
 
   return (
     <AbsoluteFill name="Hook B background" style={{ backgroundColor: "#000" }}>
-      <Img
-        src={staticFile("hero.jpg")}
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          objectPosition: "center 60%",
-          scale: interpolate(frame, [0, 6, 80], [1.28, 1.18, 1.1], {
-            extrapolateLeft: "clamp",
-            extrapolateRight: "clamp",
-            easing: Easing.out(Easing.quad),
-            output: "perceptual-scale",
-          }),
-          translate: interpolate(
-            frame,
-            [0, 2, 4, 6, 8],
-            ["0px 0px", "-10px 6px", "8px -4px", "-4px 2px", "0px 0px"],
-            {
-              extrapolateLeft: "clamp",
-              extrapolateRight: "clamp",
-              easing: Easing.linear,
-            },
-          ),
-        }}
-      />
-      <AbsoluteFill
-        name="Darken scrim"
-        style={{ backgroundColor: "rgba(6,4,3,0.6)" }}
-      />
       <Particles color="#FFFFFF" />
       <AbsoluteFill
         name="Hook B copy"
         style={{
           justifyContent: "center",
           alignItems: "center",
-          padding: "260px 90px 380px 90px",
+          padding: "260px 0px 380px 0px",
         }}
       >
+        <Interactive.Div
+          name="Pod photo frame"
+          style={{
+            width: 1080,
+            height: 562,
+            scale: interpolate(frame, [0, 8, 12], [0.86, 1.04, 1], {
+              extrapolateLeft: "clamp",
+              extrapolateRight: "clamp",
+              easing: Easing.out(Easing.back(2.2)),
+              output: "perceptual-scale",
+            }),
+            translate: interpolate(
+              frame,
+              [0, 2, 4, 6, 8],
+              ["0px 0px", "-10px 6px", "8px -4px", "-4px 2px", "0px 0px"],
+              {
+                extrapolateLeft: "clamp",
+                extrapolateRight: "clamp",
+                easing: Easing.linear,
+              },
+            ),
+          }}
+        >
+          <Img
+            src={staticFile("hero.jpg")}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              display: "block",
+            }}
+          />
+        </Interactive.Div>
         <Interactive.Div
           name="Needs this text"
           style={{
             fontFamily: headlineFont,
             fontWeight: 800,
-            fontSize: 132,
+            fontSize: 116,
             color: "#FFFFFF",
             letterSpacing: "-2px",
             textAlign: "center",
-            textShadow: "0 8px 40px rgba(0,0,0,0.55)",
+            marginTop: 44,
             scale: interpolate(frame, [0, 5, 10], [0.5, 1.2, 1], {
               extrapolateLeft: "clamp",
               extrapolateRight: "clamp",
