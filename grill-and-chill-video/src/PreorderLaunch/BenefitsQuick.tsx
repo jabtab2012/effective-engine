@@ -33,13 +33,13 @@ export const BenefitsQuick: React.FC = () => {
           color: "#FFFFFF",
           textAlign: "center",
           maxWidth: 880,
-          scale: interpolate(frame, [0, 6, 24, 30], [0.7, 1.06, 1, 0.85], {
+          scale: interpolate(frame, [0, 6, 39, 45], [0.7, 1.06, 1, 0.85], {
             extrapolateLeft: "clamp",
             extrapolateRight: "clamp",
             easing: Easing.out(Easing.back(1.5)),
             output: "perceptual-scale",
           }),
-          opacity: interpolate(frame, [0, 5, 25, 30], [0, 1, 1, 0], {
+          opacity: interpolate(frame, [0, 5, 40, 45], [0, 1, 1, 0], {
             extrapolateLeft: "clamp",
             extrapolateRight: "clamp",
             easing: Easing.linear,
@@ -61,7 +61,7 @@ export const BenefitsQuick: React.FC = () => {
           maxWidth: 880,
           scale: interpolate(
             frame,
-            [30, 36, 54, 60],
+            [45, 51, 84, 90],
             [0.7, 1.06, 1, 0.85],
             {
               extrapolateLeft: "clamp",
@@ -70,7 +70,7 @@ export const BenefitsQuick: React.FC = () => {
               output: "perceptual-scale",
             },
           ),
-          opacity: interpolate(frame, [30, 35, 55, 60], [0, 1, 1, 0], {
+          opacity: interpolate(frame, [45, 50, 85, 90], [0, 1, 1, 0], {
             extrapolateLeft: "clamp",
             extrapolateRight: "clamp",
             easing: Easing.linear,
@@ -90,13 +90,18 @@ export const BenefitsQuick: React.FC = () => {
           color: "#FFFFFF",
           textAlign: "center",
           maxWidth: 880,
-          scale: interpolate(frame, [60, 66, 84, 90], [0.7, 1.06, 1, 0.85], {
-            extrapolateLeft: "clamp",
-            extrapolateRight: "clamp",
-            easing: Easing.out(Easing.back(1.5)),
-            output: "perceptual-scale",
-          }),
-          opacity: interpolate(frame, [60, 65, 85, 90], [0, 1, 1, 0], {
+          scale: interpolate(
+            frame,
+            [90, 96, 129, 135],
+            [0.7, 1.06, 1, 0.85],
+            {
+              extrapolateLeft: "clamp",
+              extrapolateRight: "clamp",
+              easing: Easing.out(Easing.back(1.5)),
+              output: "perceptual-scale",
+            },
+          ),
+          opacity: interpolate(frame, [90, 95, 130, 135], [0, 1, 1, 0], {
             extrapolateLeft: "clamp",
             extrapolateRight: "clamp",
             easing: Easing.linear,

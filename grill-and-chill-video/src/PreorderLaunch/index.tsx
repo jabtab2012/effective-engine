@@ -1,4 +1,5 @@
-import { AbsoluteFill, Sequence } from "remotion";
+import { AbsoluteFill, Sequence, staticFile } from "remotion";
+import { Audio } from "@remotion/media";
 import { HookA } from "./HookA";
 import { HookB } from "./HookB";
 import { ProductReveal } from "./ProductReveal";
@@ -8,6 +9,11 @@ import { EndCTA } from "./EndCTA";
 export const PreorderLaunch: React.FC = () => {
   return (
     <AbsoluteFill name="Preorder launch" style={{ backgroundColor: "#000" }}>
+      <Audio
+        name="Hype music"
+        src={staticFile("preorder-hype.wav")}
+        volume={0.85}
+      />
       <Sequence name="Hook A" durationInFrames={70} layout="none">
         <HookA />
       </Sequence>
@@ -25,12 +31,12 @@ export const PreorderLaunch: React.FC = () => {
       <Sequence
         name="Benefits quick cuts"
         from={270}
-        durationInFrames={90}
+        durationInFrames={135}
         layout="none"
       >
         <BenefitsQuick />
       </Sequence>
-      <Sequence name="End CTA" from={360} durationInFrames={90} layout="none">
+      <Sequence name="End CTA" from={405} durationInFrames={105} layout="none">
         <EndCTA />
       </Sequence>
     </AbsoluteFill>
