@@ -49,7 +49,7 @@ export const EndCTA: React.FC = () => {
           fontWeight: 800,
           fontSize: 48,
           color: "#0B0908",
-          backgroundColor: "#F0A24E",
+          backgroundColor: "#F15E22",
           padding: "18px 36px",
           borderRadius: 999,
           letterSpacing: "1px",
@@ -109,7 +109,7 @@ export const EndCTA: React.FC = () => {
           fontFamily: headlineFont,
           fontWeight: 700,
           fontSize: 40,
-          color: "#F0A24E",
+          color: "#F15E22",
           marginTop: 22,
           opacity: interpolate(frame, [52, 62], [0, 1], {
             extrapolateLeft: "clamp",
