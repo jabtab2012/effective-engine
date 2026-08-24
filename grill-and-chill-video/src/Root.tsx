@@ -5,6 +5,12 @@ import { LogoReveal } from "./HostPodPromo/LogoReveal";
 import { HeroTitle } from "./HostPodPromo/HeroTitle";
 import { Benefits } from "./HostPodPromo/Benefits";
 import { EndCard } from "./HostPodPromo/EndCard";
+import { PreorderLaunch } from "./PreorderLaunch";
+import { HookA } from "./PreorderLaunch/HookA";
+import { HookB } from "./PreorderLaunch/HookB";
+import { ProductReveal } from "./PreorderLaunch/ProductReveal";
+import { BenefitsQuick } from "./PreorderLaunch/BenefitsQuick";
+import { EndCTA } from "./PreorderLaunch/EndCTA";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -46,6 +52,56 @@ export const RemotionRoot: React.FC = () => {
           id="HostPodPromo-EndCard"
           component={EndCard}
           durationInFrames={60}
+          fps={30}
+          width={1080}
+          height={1920}
+        />
+      </Folder>
+      <Composition
+        id="PreorderLaunch"
+        component={PreorderLaunch}
+        durationInFrames={450}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Folder name="PreorderLaunch-Scenes">
+        <Composition
+          id="PreorderLaunch-HookA"
+          component={HookA}
+          durationInFrames={70}
+          fps={30}
+          width={1080}
+          height={1920}
+        />
+        <Composition
+          id="PreorderLaunch-HookB"
+          component={HookB}
+          durationInFrames={80}
+          fps={30}
+          width={1080}
+          height={1920}
+        />
+        <Composition
+          id="PreorderLaunch-ProductReveal"
+          component={ProductReveal}
+          durationInFrames={120}
+          fps={30}
+          width={1080}
+          height={1920}
+        />
+        <Composition
+          id="PreorderLaunch-BenefitsQuick"
+          component={BenefitsQuick}
+          durationInFrames={90}
+          fps={30}
+          width={1080}
+          height={1920}
+        />
+        <Composition
+          id="PreorderLaunch-EndCTA"
+          component={EndCTA}
+          durationInFrames={90}
           fps={30}
           width={1080}
           height={1920}
