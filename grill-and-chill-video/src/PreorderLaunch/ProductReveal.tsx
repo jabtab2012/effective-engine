@@ -21,7 +21,7 @@ export const ProductReveal: React.FC = () => {
           height: "100%",
           objectFit: "cover",
           objectPosition: "center 60%",
-          scale: interpolate(frame, [0, 120], [1.1, 1.22], {
+          scale: interpolate(frame, [0, 120], [1.2, 1.32], {
             extrapolateLeft: "clamp",
             extrapolateRight: "clamp",
             easing: Easing.linear,
@@ -51,7 +51,7 @@ export const ProductReveal: React.FC = () => {
             fontWeight: 800,
             fontSize: 40,
             color: "#0B0908",
-            backgroundColor: "#F0A24E",
+            backgroundColor: "#F15E22",
             padding: "14px 28px",
             borderRadius: 999,
             letterSpacing: "1px",
@@ -110,7 +110,7 @@ export const ProductReveal: React.FC = () => {
             fontFamily: headlineFont,
             fontWeight: 600,
             fontSize: 44,
-            color: "#F0A24E",
+            color: "#F15E22",
             marginTop: 18,
             opacity: interpolate(frame, [40, 52], [0, 1], {
               extrapolateLeft: "clamp",

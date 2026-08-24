@@ -29,7 +29,7 @@ export const HookB: React.FC = () => {
           style={{
             width: 1080,
             height: 562,
-            scale: interpolate(frame, [0, 8, 12], [0.86, 1.04, 1], {
+            scale: interpolate(frame, [0, 8, 12], [0.86, 1.12, 1.08], {
               extrapolateLeft: "clamp",
               extrapolateRight: "clamp",
               easing: Easing.out(Easing.back(2.2)),

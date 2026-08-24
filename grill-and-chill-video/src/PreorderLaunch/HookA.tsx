@@ -21,7 +21,7 @@ export const HookA: React.FC = () => {
         padding: "260px 90px 380px 90px",
       }}
     >
-      <Particles color="#F0A24E" />
+      <Particles color="#F15E22" />
       <AbsoluteFill
         name="Hook A copy"
         style={{
@@ -59,7 +59,7 @@ export const HookA: React.FC = () => {
             fontFamily: headlineFont,
             fontWeight: 800,
             fontSize: 128,
-            color: "#F0A24E",
+            color: "#F15E22",
             letterSpacing: "-2px",
             marginTop: 4,
             scale: interpolate(frame, [16, 26, 32], [0.6, 1.15, 1], {

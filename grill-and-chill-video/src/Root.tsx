@@ -60,7 +60,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="PreorderLaunch"
         component={PreorderLaunch}
-        durationInFrames={510}
+        durationInFrames={480}
         fps={30}
         width={1080}
         height={1920}
@@ -69,7 +69,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="PreorderLaunch-HookA"
           component={HookA}
-          durationInFrames={70}
+          durationInFrames={55}
           fps={30}
           width={1080}
           height={1920}
@@ -77,7 +77,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="PreorderLaunch-HookB"
           component={HookB}
-          durationInFrames={80}
+          durationInFrames={65}
           fps={30}
           width={1080}
           height={1920}

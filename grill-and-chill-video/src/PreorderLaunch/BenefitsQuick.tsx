@@ -21,7 +21,7 @@ export const BenefitsQuick: React.FC = () => {
         padding: "260px 90px 380px 90px",
       }}
     >
-      <Particles color="#F0A24E" />
+      <Particles color="#F15E22" />
       <Interactive.Div
         name="Benefit line 1"
         style={{
@@ -56,7 +56,7 @@ export const BenefitsQuick: React.FC = () => {
           fontWeight: 800,
           fontSize: 92,
           lineHeight: 1.08,
-          color: "#F0A24E",
+          color: "#F15E22",
           textAlign: "center",
           maxWidth: 880,
           scale: interpolate(

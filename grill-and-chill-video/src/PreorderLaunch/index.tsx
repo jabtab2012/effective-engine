@@ -14,15 +14,15 @@ export const PreorderLaunch: React.FC = () => {
         src={staticFile("preorder-hype.wav")}
         volume={0.85}
       />
-      <Sequence name="Hook A" durationInFrames={70} layout="none">
+      <Sequence name="Hook A" durationInFrames={55} layout="none">
         <HookA />
       </Sequence>
-      <Sequence name="Hook B" from={70} durationInFrames={80} layout="none">
+      <Sequence name="Hook B" from={55} durationInFrames={65} layout="none">
         <HookB />
       </Sequence>
       <Sequence
         name="Product reveal"
-        from={150}
+        from={120}
         durationInFrames={120}
         layout="none"
       >
@@ -30,13 +30,13 @@ export const PreorderLaunch: React.FC = () => {
       </Sequence>
       <Sequence
         name="Benefits quick cuts"
-        from={270}
+        from={240}
         durationInFrames={135}
         layout="none"
       >
         <BenefitsQuick />
       </Sequence>
-      <Sequence name="End CTA" from={405} durationInFrames={105} layout="none">
+      <Sequence name="End CTA" from={375} durationInFrames={105} layout="none">
         <EndCTA />
       </Sequence>
     </AbsoluteFill>
