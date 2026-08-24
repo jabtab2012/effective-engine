@@ -22,9 +22,9 @@ export const EndCTA: React.FC = () => {
         padding: "260px 90px 380px 90px",
       }}
     >
-      <Interactive.Div name="Logo mark" style={{ width: 340 }}>
+      <Interactive.Div name="Logo mark" style={{ width: 620 }}>
         <Img
-          src={staticFile("logo.png")}
+          src={staticFile("logo-wordmark.png")}
           style={{
             width: "100%",
             display: "block",
